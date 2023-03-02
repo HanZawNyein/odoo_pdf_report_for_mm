@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="action_hz_reporter_report" model="ir.actions.report">
+        <field name="name">Reporter PDF</field>
+        <field name="model">hz.reporter</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">hz_reporter.hz_reporter_template</field>
+        <field name="report_file">hz_reporter.hz_reporter_template</field>
+        <field name="binding_model_id" ref="model_hz_reporter"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="hz_reporter_view_form" model="ir.ui.view">
+        <field name="name">hz_reporter_view_form</field>
+        <field name="model">hz.reporter</field>
+        <field name="arch" type="xml">
+            <form string="hz_reporter_form">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="hz_reporter_action" model="ir.actions.act_window">
+        <field name="name">Reporter</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hz.reporter</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action -->
+    <menuitem id="hz_reporter_root" name="Reporter">
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="hz_reporter_category" name="Reporter" action="hz_reporter_action"/>
+    </menuitem>
+</odoo>
