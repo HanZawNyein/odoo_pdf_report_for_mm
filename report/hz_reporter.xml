@@ -6,7 +6,7 @@
         <t t-call="web.html_container">
             <t t-foreach="docs" t-as="o">
                 <t t-call="web.external_layout">
-                    <div class="page">
+                    <div class="page" style="font-family: 'Pyidaungsu'">
                         <h1>Odoo တွင် PDF ကို မြန်မာစာရအောင် ရေးနည်း</h1>
                         <h2>Report title</h2>
                         <p>This object's name is
